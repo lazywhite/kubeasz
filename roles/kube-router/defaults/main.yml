@@ -7,7 +7,7 @@ ROUTER_ENABLE: "true"
 FIREWALL_ENABLE: "true"
 
 # service-proxy 支持开关，如选择 'false' 即使用k8s集群默认的kube-proxy
-SERVICE_PROXY: "false"
+SERVICE_PROXY: "true"
 
 # kube-router 镜像版本
 kube_router_ver: "v0.2.0-beta.9"

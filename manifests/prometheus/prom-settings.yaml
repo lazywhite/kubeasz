@@ -1,13 +1,13 @@
 alertmanager:
   persistentVolume:
-    enabled: false
+    enabled: true
   service:
     type: NodePort
     nodePort: 39001
 
 server:
   persistentVolume:
-    enabled: false
+    enabled: true
   service:
     type: NodePort
     nodePort: 39000

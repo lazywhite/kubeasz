@@ -4,14 +4,10 @@ metadata:
   name: pv-es-0
 spec:
   capacity:
-    storage: 4Gi
+    storage: 500Gi
   accessModes:
     - ReadWriteMany
-  volumeMode: Filesystem
-  persistentVolumeReclaimPolicy: Recycle
-  storageClassName: "es-storage-class"
+  persistentVolumeReclaimPolicy: Retain
   nfs:
-    # 根据实际共享目录修改
+    server: 172.31.191.211
     path: /share/es0
-    # 根据实际 nfs服务器地址修改
-    server: 192.168.1.208

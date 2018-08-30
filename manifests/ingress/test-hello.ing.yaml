@@ -4,7 +4,7 @@ metadata:
   name: test-hello
 spec:
   rules:
-  - host: hello.test.com
+  - host: hello.cmri.com
     http:
       paths:
       - path: /
